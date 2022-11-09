@@ -11,8 +11,10 @@ module.exports = {
     parser: '@babel/eslint-parser'
   },
   rules: {
+    // 'vue/no-unused-components': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-multiple-empty-lines': 'off' // 不允许有连续多行空行(关闭规则)
   },
   overrides: [
     {
